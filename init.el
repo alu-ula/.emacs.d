@@ -120,3 +120,7 @@
      (load-library "~/.emacs.d/sql-complete.el")
      (load-library "~/.emacs.d/sql-transform.el")))
 (add-to-list 'auto-mode-alist '("\\.sql$" . sql-mode))
+
+;; Markdown
+(autoload 'markdown-mode "~/.emacs.d/markdown-mode.el" "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
